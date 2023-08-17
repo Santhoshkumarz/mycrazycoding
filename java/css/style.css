@@ -1,0 +1,918 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+
+
+
+
+/*---------Body----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background:white;
+}
+/*------------End------------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------Navigation design----------------------*/
+.sticky
+{
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    top: 0;
+    background: #EBF5FB;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    user-select: none;
+    
+}
+.logo
+{
+    font-family: 'Fjalla One', sans-serif;
+    padding-left: 30px;
+    width: 18vw;
+    font-size: 14px;
+}
+.logo a
+{
+    text-decoration: none;
+    color:black;
+}
+.logo a:hover
+{
+    color: black;
+}
+.list
+{
+    padding-left: 5vw;
+}
+.list ol
+{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.list ol li
+{
+    display: inline-block;
+    margin: 0 15px;
+}
+.list ol li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.sticky button
+{
+    cursor: pointer;
+    border: none;
+    background:#EBF5FB ;
+}
+.create
+{
+    background: black ;
+    padding:7px;
+    color:white;
+    font-size: 14px;
+    border-radius: 50px;
+}
+.sticky .right_sidebar_control
+{
+    position: fixed;
+    right: 4%;
+    top:2%;
+    visibility: hidden;
+}
+.extra
+{
+    display: none;
+    position: absolute;
+    top:8vh;
+    border-top:4px solid black;
+    margin-left: -15px;
+    background: #EBF5FB;
+    transition: 0.2s;
+    transition-timing-function: ease;
+}
+.extra ol
+{
+    margin:10px;
+}
+.extra ol li
+{
+    display: block;
+    list-style: none;
+    padding:10px;
+    border-bottom: 1px solid #D5DBDB;
+    text-align: left;
+}
+.extra ol li:last-child
+{
+    border-bottom:none;
+}
+
+.extra ol li a
+{
+    color:black;
+}
+.parents
+{
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/*--------------------END of navigation-------------------*/
+
+
+
+/*---------loader design----------*/
+
+:root 
+{
+
+        --main-color: white;
+        --point-color: #555;
+        --size: 5px;
+}
+.loader 
+{
+  
+        background-color: var(--main-color);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        display: flex;
+        align-items: center;
+        align-content: center; 
+        justify-content: center;  
+        z-index: 100000;
+}
+.loader__element 
+{
+        border-radius: 100%;
+        background:#555;
+        margin: calc(var(--size)*2);
+}
+.loader__element:nth-child(1) 
+{
+        border: var(--size) solid var(--point-color);
+        animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) 
+{
+        border: var(--size) solid var(--point-color);
+        animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+.loader__element:nth-child(3) 
+{
+        border: var(--size) solid var(--point-color);
+        animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+@keyframes preloader 
+{
+        100% { transform: scale(2); }
+}
+
+/*-----------------End of loder design------------*/
+
+
+
+
+
+/* width */
+
+::-webkit-scrollbar 
+{
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track 
+{
+    background: white; 
+    border-radius: 20px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background: #555; 
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #555; 
+}
+::-webkit-scrollbar:horizontal
+{
+    height: 8px;
+    width: 6px;
+    background: black;
+}
+::selection 
+{
+    background: #347CEA ;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------content design------------------*/
+
+.content
+{
+     font-family: 'Roboto', sans-serif;
+     display:block;
+     width:63vw;
+     height: 100%;
+     background:white;
+     margin-top: 18vh;
+     position: static;
+     margin-left: 19vw;
+     padding: 1px 16px;
+     overflow: hidden;
+ }
+
+/* inside content tag design */
+
+.content #problemhead
+{
+    font-size:20px;
+    padding-top:2%;
+    padding-left:0px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+
+
+.content  ol 
+{
+    padding-left:30%;
+    font-size:15px;
+    list-style-type:disc;
+    word-spacing: 3px;
+    letter-spacing: 0.3px;
+}
+.content  ol li
+{
+    padding: 10px;
+}
+#content_p
+{
+    font-size:15px;
+    word-spacing: 3px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+}
+.statement
+{
+    background:#EBEDEF;
+    padding: 5px;
+    font-size:14px; 
+    font-weight: bold;
+}
+hr
+{
+    border: none;
+    height: 1px;
+    background: #D5DBDB;
+}
+h2
+{
+    font-weight:600;
+    font-size: 18px;
+}
+
+/*Table design*/
+
+table
+{
+    width: 100%;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
+table,tr
+{
+    font-size: 15px;    
+}  
+table,th,td
+{
+   
+    padding: 15px;
+    text-align: left;
+}
+td,th
+{
+    border-left: 3px solid white;
+}
+th
+{
+    background-color:#D6EAF8;
+    color: black;
+   
+    text-align: center; 
+}
+table a
+{
+   text-decoration: none;
+   color: blue;
+}
+table a:hover
+{
+   text-decoration: underline;
+}
+table tr:nth-child(odd){background-color: #EBF5FB;}
+table tr .json_code
+{
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 13px;
+}
+
+
+
+/*code area design*/
+
+
+.box
+{
+    height: 100%;
+    width: 100%;
+    border-top:none;
+    background: #f2f2f2;
+    padding: 4%;
+    border-bottom: 1px solid #f2f2f2;  
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.box .heading
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color:#f2f2f2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 45px;
+    padding-left: 1%;
+    padding-bottom: 4%;
+    font-size: 19px;
+    font-weight: 600;
+}
+.syntax
+{
+    height: 100%;
+    width: 100%;
+    background-color:#f2f2f2;
+    border-radius: 5px;
+    position: static;
+    overflow: auto;
+}
+.syntax pre
+{
+    font-family: 'Noto Sans Mono', monospace;
+    font-size:13.5px;
+    font-weight:500;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.src
+{
+    width:100%;
+    padding:30px;
+    background-color:white;
+    border-left: 3px solid #1E53BC;
+    /*box-shadow: 0 0 3px 3px #F4F6F7;*/
+    position: static;
+    overflow-x: auto;
+}
+.src pre
+{
+   font-family: 'Noto Sans Mono', monospace;
+   font-size:13.5px;
+}
+#output
+{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color:#17202A;
+    border: 1px solid #D5DBDB;
+    position: static;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+#output pre
+{
+    font-family: 'Noto Sans Mono', monospace;
+    font-size:14px;
+    color:white;
+    padding-left: 1%;
+}
+#Non_src
+{
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    position: static;
+    overflow-x: auto;
+}
+#Non_src pre
+{
+   
+    font-family: 'Noto Sans Mono', monospace;
+    font-size:14px;
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.output1
+{
+    height: 100%;
+    width: 100%;
+    background-color:#17202A;
+    border: 1px solid #D5DBDB;
+    position: static;
+    overflow-x: auto;
+}
+.output1 pre
+{
+    font-family: 'Noto Sans Mono', monospace;
+    font-size:14px;
+    color: white;
+    font-weight:500;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/*source code font color*/
+.keyword
+{
+    color:blue;
+}
+.doublequote
+{
+    color:green; 
+}
+.digit
+{
+    color:#D63E12;
+}
+.Nonspec
+{
+    color:#0600B7;
+}
+.doubleslash
+{
+    color:#2ECC71;
+}
+.listen
+{
+    background:#F0F77C;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.listen .center
+{
+    text-align: center;
+    background-color:red;
+}
+.image
+{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.image img
+{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------End of content design----------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------------side bar design---------------------*/
+
+#side
+{
+      font-family: 'Roboto', sans-serif;
+      border-top:none; 
+      margin: 0;
+      padding: 0;
+      top:8vh;
+      background-color: white;
+      position: fixed;
+      border-right: 1px solid #D5DBDB;
+      height: 90vh;
+      width: 18vw;
+      user-select: none;
+}
+#side a 
+{
+     display: block;
+     color: black;
+     padding: 8px;
+     font-size: 13px;
+     letter-spacing: 0.4px;
+     text-decoration: none;
+     transition: .2s;
+}
+#side a i
+{
+     padding: 5px;
+}
+#side .title
+{
+     padding: 10px;
+     font-size: 15px;
+     text-align: center;
+     background: white;
+     border-bottom: 1px solid #D5DBDB;
+     color: black;
+     font-weight: 700;
+}
+#side .topics
+{
+     overflow: auto;
+     height: 90%;
+}
+#side #H1
+{
+
+     padding: 15px;
+     font-size: 13.5px;
+     letter-spacing: 0.3px;
+     color: #2C3E50;
+}
+#side a.active 
+{   
+    font-weight: 700;
+    opacity: 1;
+    background: #D8E8F7;
+    color:blue;
+    border-left:3px solid #3352FF;
+}
+#side a:hover:not(.active) 
+{
+    background-color:  #D8E8F7;
+    color: #0F58E9;
+}
+
+.sidebar 
+{
+      /**/
+}
+/*-----------------End of side bar design--------------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------------------footer design---------------------------*/
+
+.footer
+{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #D5DBDB;
+    border-bottom: 1px solid #D5DBDB;
+}
+.footer .boxes #test
+{    
+    color: blue;
+    text-decoration: none;
+    background-color: #EAEDED;
+    color: black;
+    font-size: 14px;
+    border: 10px solid #EAEDED;
+    border-radius: 10px;
+}
+.footer .boxes #test:hover
+{
+    border: 10px solid #1C2833 ;
+    background-color: #1C2833 ;
+    color:white;
+}
+.footer .boxes
+{
+    padding: 20px;
+}
+.footer .boxes .socialmedia
+{
+    margin:0 10px;
+}
+.footer .boxes .socialmedia a
+{
+    font-size:15px;
+}
+.footer #boxes_social_media
+{
+    display: flex;
+    font-size: 14px;
+}
+.footer .boxes ol li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+
+/*End of footer*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------Right side ads div-----------*/
+
+.ads
+{
+    position: fixed;
+    top:10%;
+    left:84%;
+    width: 15vw;
+    height:80vh;
+}
+
+/*End ----------------*/
+
+
+
+
+/*-----------Right side bar-------------------*/
+
+.string_method_sidebar
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: fixed;
+    top:10%;
+    left:83%;
+    width: 16%;
+    height:80%;
+    background: white;
+    border: 1px solid #D5DBDB;
+}
+.string_head
+{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    background: white;
+    font-weight: 700;
+    border-bottom: 1px solid #D5DBDB;
+}
+.string_topics::-webkit-scrollbar-track
+{
+    background: white;
+}
+.string_topics
+{
+   height: 90%;
+   overflow: auto;
+}
+.string_topics a
+{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  color: black;
+  border-bottom: 1px solid #D5DBDB;
+}
+.string_topics a.active 
+{
+   
+    font-weight: 700;
+    background: white;
+    color: blue;
+    border-left:3px solid #3352FF;
+}
+.string_topics a:hover:not(.active) 
+{
+    background-color:  #D8E8F7;
+    color: #0F58E9;
+}
+
+
+/*-------------End-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------View Adjustment-----------------------*/
+
+@media screen and (max-width: 1316px)
+{
+    .content #problemhead
+    {
+        font-size:23px;
+    }
+}
+@media screen and (max-width: 1083px)
+{
+    .ads
+    {
+        display: none;
+    }
+    #side
+    {
+        width: 22vw;
+    }
+    .content
+    {
+        margin-left: 23vw;
+        width: 70vw;
+    }
+    
+}
+@media screen and (max-width: 1000px)
+{
+    .sidebar #H1
+    {
+        font-size: 18px;  
+    }
+}
+@media screen and (max-width: 900px)
+{
+      .sidebar
+      {
+          display: none;
+      }
+
+      #side
+      {
+         width: 50vw;
+      }
+      .ads
+      {
+          display: none;
+      }
+      .content
+      {
+          margin-left: 0%;
+          width:100%;
+      }
+      .addiv
+      {
+         display: none;
+      }
+      .string_method_sidebar
+      {
+         display: none;
+      }
+
+      .box
+      {
+         margin: 0;
+      }
+     .sticky .right_sidebar_control
+      {
+         visibility: visible;
+      } 
+      .list
+      {
+         display: none;
+      }
+      .logo
+      {
+            width: 80vw;
+      }
+}
+@media screen and (max-width: 700px)
+{
+     .syntax pre
+     {
+         padding-bottom: 3%;
+         padding-top: 3%;
+     }
+}
+@media screen and (max-width: 566px)
+{
+     .content
+     {
+         padding: 1px;
+     }
+     .content #problemhead
+     {
+         padding:5px;
+         padding-top: 20px;
+     }
+     #content_p
+     {
+        padding:5px;
+     }
+     h2
+     {
+        padding:5px;
+     }
+}
+@media screen and (max-width: 450px)
+{
+    .syntax pre
+    {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    .src
+    {
+        padding:15px;
+    }
+    .src pre
+    {
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+    .logo
+    {
+        padding-left: 15px;
+    }
+    #side
+    {
+         width: 80vw;
+    } 
+}
+

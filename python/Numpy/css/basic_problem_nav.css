@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background:white;
+  scroll-behavior: smooth;
+
+}
+
+
+
+.sticky
+{
+   position: fixed;
+   width: 100%;
+   height: 8%;
+   top: 0;
+   background: #EBF5FB;
+
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   transition: 2s;
+
+}
+
+.logo
+{
+    font-family: 'Fjalla One', sans-serif;
+    padding-left: 30px;
+}
+.list
+{
+   padding-left: 150px;
+}
+.list ol
+{
+   list-style: none;
+   font-family: 'Open Sans', sans-serif;
+}
+.list ol li
+{
+  display: inline-block;
+ margin: 0 15px;
+}
+.list ol li a
+{
+   text-decoration: none;
+   color: black;
+   font-size: 13px;
+}
+
+.sticky button
+{
+    cursor: pointer;
+    border: none;
+    background:#EBF5FB ;
+
+}
+.create
+{
+    background: black ;
+    padding:7px;
+    color:white;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.sticky .right_sidebar_control
+{
+   
+   position: fixed;
+   right: 4%;
+   top:2%;
+   visibility: hidden;
+
+}
+
+.extra
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  position: fixed;
+  border-top:4px solid black;
+  left: 26%;
+  top: 14%;
+  visibility: hidden;
+  width: 12%;
+  height: 33%;
+   background: #EBF5FB;
+   transition: 0.2s;
+  transition-timing-function: ease;
+}
+
+
+.extra ol li
+{
+ display: block;
+  list-style: none;
+  padding:10px;
+   border-bottom: 1px solid #D5DBDB;
+}
+
+.extra ol li a
+{
+   color:black;
+
+}
+
+
+
+.parents
+{
+  cursor: pointer;
+   font-size: 13px;
+}
+.parents:hover .extra
+{
+   visibility: visible;
+   top: 8%;
+}
+
+
+
+
+
+
+
+  @media screen and (max-width: 1066px)
+  {
+    .list
+    {
+      display: none;
+    }
+    .content
+    {
+      margin-top: 30%;
+    }
+    .box
+    {
+       margin: 0;
+    }
+    .sticky .right_sidebar_control
+    {
+        visibility: visible;
+    }
+  }

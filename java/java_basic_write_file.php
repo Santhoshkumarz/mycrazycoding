@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>File write in java</title>
+ 
+    <link rel="stylesheet" href="css/java_style1.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="best way to read and write file in java,best way to write file in java,best way to write file in java 8,create and write file in java,create and write file in java 8,different ways to write file in java,fastest way to write file in java,file write in java program,how do i write to a file in java,how do you write to a file in java,how to write file in java,how to write file in java 8,how to write file in java program,how to write in a file in java,how to write on a file in java,how to write to a new file in java,how to write values to a file in java,how write file in java,write file in java,write file in java 8,write to file in java 8,write file in java,write file in java in mycrazycoding">
+    
+    <script src="file:///E:/jquery.js"></script>
+    <script data-ad-client="ca-pub-7569865976437849" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <style>
+#download
+{
+  box-sizing: content-box;  
+  width: 300px;
+  height: 100px;
+  background: red;
+  border: 10px solid red;
+  color: white;
+  text-decoration:none;
+  margin-left: 50vh;
+}
+#download:hover
+{
+      background: #DB2320;
+      border: 10px solid #DB2320;
+}
+#inside
+{
+  
+  
+  padding-left: 10%;
+}
+#inside li
+{
+   
+}
+    </style>
+  </head>
+  <body>
+   <?php
+   include "nav.php";
+    ?>
+    <div id="side" class="sidebar">
+
+<div class="topics">
+  <h1 id="H1">BASIC TURORIAL</h1>
+  <a  href="java_index.php" id="A" ><i class="fas fa-arrow-alt-circle-right"></i> Introduction</a>
+  <a href="java_basic_print.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Print</a>
+  <a href="java_basic_input_get.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Input get</a>
+  <a href="java_basic_data_types.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Datatypes</a>
+  <a href="java_basic_types_of_operator.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Types of operator</a>
+  <a href="java_basic_Keywords.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Keywords</a>
+  <a href="java_basic_if.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> if,if else,..</a>
+  <a href="java_basic_switch.php" id="A"><i class="fas fa-arrow-alt-circle-right"></i> Switch</a>
+  <a href="java_basic_loop.php" id="A" ><i class="fas fa-arrow-alt-circle-right"></i> Loop</a>
+  <a href="java_basic_array.php" id="A" ><i class="fas fa-arrow-alt-circle-right"></i> Array</a>
+  <a href="java_basic_Math_methods.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Math methods</a>
+  <a href="java_basic_string_stringmethod.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> String/String methods</a>
+  <a href="java_basic_Exception_Handling.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Exception Handling</a>
+<br>
+ 
+  <h1 id="H1">FUNCTIONS</h1>
+  <a href="java_basic_function_main.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Function</a>
+  <a href="java_basic_function.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Types of Function</a>
+  <a href="java_basic_Varargs.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Variable Arguments (Varargs)</a>
+  <a href="java_basic_recursion.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Recursion</a>
+ <br>
+ 
+  <h1 id="H1">OBJECT ORIENTED</h1>
+  <a href="java_basic_class.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Class</a>
+  <a href="java_basic_constructor.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Constructor</a>
+  <a href="java_basic_inheritance.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Inheritance</a>
+  <a href="java_basic_Overloading.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Method Overloading</a>
+  <a href="java_basic_Overriding.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Method Overriding</a>
+  <a href="java_basic_interface.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Interface</a>
+  <a href="java_basic_Abstruct.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Abstract Class</a>
+  <a href="java_basic_anonymous_class.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Anonymous class</a>
+  <a href="java_basic_Wrapper.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Wrapper class</a>
+  <a href="java_basic_innerclass.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Innerclass</a>
+  <a href="java_basic_Iterator.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Iterator</a>
+  <a href="java_basic_encapsulation.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Encapsulation</a>
+  <a href="java_basic_Enum.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Enum</a>
+  <a href="java_basic_Package.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Package</a>
+  <a href="java_basic_Thread.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Thread</a>
+  <a href="java_basic_Multiple_Thread.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Multithread</a>
+  <a href="java_basic_Lambda_Expression.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Lambda Expression</a>
+ <br>
+
+  <h1 id="H1">LIST</h1>
+  <a href="java_basic_ArrayList.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> ArrayList</a>
+  <a href="java_basic_LinkedList.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> LinkedList</a>
+  <a href="java_basic_HashMap.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> HashMap</a>
+  <a href="java_basic_HashSet.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> HashSet</a>
+<br>
+
+  <h1 id="H1">FILE HANDLING</h1>
+  <a href="java_basic_file_create.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Create-file</a>
+  <a class="active" href="java_basic_write_file.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Write-file</a>
+  <a href="java_basic_read_file.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Read-file</a>
+  <a href="java_basic_delete_file.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Delete-file</a>
+  <br>
+ 
+ 
+  <h1 id="H1">OTHERS</h1>
+  <a href="Howto/howto_index.php"  id="A"><i class="fas fa-arrow-alt-circle-right"></i> Java How to</a>
+<hr>
+</div>
+<br><br>
+</div>
+
+<div class="content">
+  
+<h1 id="problemhead">Write File in Java</h1><br><br><br>
+<p id="content_p">The below given code used to write the file.First Declare the BufferedWriter object("write_file") then write"c c++ java python".compile and run the program.then see the File("file.txt") you will see the output like this("c c++ java python").</p>
+<br><br><br><hr><br><br>
+
+      
+<div class="box">
+  <div class="heading">Example</div>
+	  <div class="src">
+	  
+<pre>
+import java.io.*;
+import java.util.*;
+public class Main
+{
+     public static void main(String[] args) throws Exception
+     {
+          try
+          {
+                BufferedWriter write_file = new BufferedWriter(new FileWriter("file.txt"));
+                                                       
+                write_file.write("C \n");
+                write_file.write("C++\n");
+                write_file.write("Java\n");
+                write_file.write("Python\n");
+
+                write_file.close();
+          }
+
+          catch(Exception e)
+          {
+                return;
+          }
+     } 
+}
+</pre>
+	  </div> </div> <br><br> <br> <br> <br> <br> <br>
+	  <h2>Explain</h2> <br> <br> <br>
+	  <ol id="inside">
+     <li>In java programming , file writing very simple.</li> 
+     <li>First Declare the BufferedWriter object("write_file") then write"c c++ java python".</li>
+     <li>compile and run the program.then see the File("file.txt") you will see the output like this("c c++ java python").</li>
+     <li>try and catch block used for handling the Exception.</li>
+    </ol>
+
+
+<br><br><br><br>
+<a id="download"href="zip/File_write.zip"><i class="fa fa-download" aria-hidden="true"></i>   Download the code</a>
+
+
+
+  <br><br><br><hr><br><br><br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- vertical -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7569865976437849"
+     data-ad-slot="6174436937"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br><br><br>
+
+   <?php
+   include "footer.php";
+    ?>
+
+</div>
+
+
+
+  </body>
+</html>
